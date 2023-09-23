@@ -13,5 +13,20 @@ export const onGet: RequestHandler = async ({ cacheControl }) => {
 };
 
 export default component$(() => {
-  return <Slot />;
+  return <>
+    <nav class={"border-b-2 border-slate-200 dark:border-slate-800 py-4"}>
+      <div class={"max-w-3xl mx-auto flex items-center px-5"}>
+        <a class={"text-xl font-bold mr-4"} href="/">e45g</a>
+        <ul class={"flex items-center"}>
+          <li class={"mx-4"}><a class={"py-2 hover:underline"} href="/article/a">About</a></li>
+          <li class={"mx-4"}><a class={"py-2 hover:underline"} href="/article/b">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class={"max-w-3xl mx-auto px-5 flex flex-col"}>
+         <Slot/>
+    </div>
+  </>;
 });
+
