@@ -97,8 +97,20 @@ export default component$(() => {
 
 
     </>
-  );
 });
+
+
+export const useArticles = routeLoader$(async () => {
+    return await listArticle()
+})
+
+export const deleteAll = server$(async () => {
+    const articles = await listArticle()
+    articles.data?.map((article) => {
+        removeArticle(article.id)
+    })
+})
+
 
 export const head: DocumentHead = {
     title: "Welcome to Qwik",
