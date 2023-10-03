@@ -28,6 +28,8 @@ export default component$(() => {
    * immediately followed by the document's <head> and <body>.
    *
    * Don't remove the `<head>` and `<body>` elements.
+   *
+   * uwu
    */
 
   const imageTransformer$ = $(
