@@ -29,7 +29,7 @@ export default component$(() => {
    *
    * Don't remove the `<head>` and `<body>` elements.
    *
-   * uwu3
+   * uwu4
    */
 
   const imageTransformer$ = $(
